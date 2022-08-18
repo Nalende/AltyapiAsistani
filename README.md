@@ -20,3 +20,6 @@ LÜTFEN KENDİNİZ MANUEL OLARAK HESAPLAMALARI KONTROL EDİNİZ.
 ---herhangi bir konuda ulaşmak isterseniz 
 İletişim : eminkepenek@gmail.com 
 ---adresinden ulaşabilirsiniz.  
+
+
+Apk Download : https://github.com/Nalende/AltyapiAsistani/releases/tag/apk
