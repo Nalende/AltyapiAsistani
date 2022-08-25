@@ -2,8 +2,8 @@
     <string name="app_name">altyapiAsistani</string>
     <string name="uyarı">00.00 METRE</string>
     <string name="mira_okuma">00.0m</string>
-    <string name="baca_yuksek">Yüksek Kotlu baca gir</string>
-    <string name="baca_duşuk">Düşük kotlu baca gir</string>
-    <string name="nerdesin">Baca 1 den hesapla</string>
+    <string name="baca_yuksek">Yüksek Kotlu Nokta gir</string>
+    <string name="baca_duşuk">Düşük Kotlu Nokta gir</string>
+    <string name="nerdesin">Nokta 1 den hesapla</string>
 
 </resources>

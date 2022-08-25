@@ -1,8 +1,9 @@
 package com.haritaci.altyapiasistani
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.haritaci.altyapiasistani.databinding.ActivityMainBinding
+import kotlin.math.round
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
@@ -17,16 +18,18 @@ class MainActivity : AppCompatActivity() {
 
         binding.hesapButton.setOnClickListener{
             if (binding.CihazKotu.text.isNotEmpty()&&binding.baca1Kotu.text.isNotEmpty()&&binding.baca2Kotu.text.isNotEmpty()&&binding.bacaMesafe.text.isNotEmpty()&&binding.cursor.text.isNotEmpty()&&binding.boruCapi.text.isNotEmpty()) {
-                var Aletkotu = binding.CihazKotu.text.toString().toDouble()
-                var baca1 = binding.baca1Kotu.text.toString().toDouble()
-                var baca2 = binding.baca2Kotu.text.toString().toDouble()
-                var bacamesafe = binding.bacaMesafe.text.toString().toDouble()
-                var nerdesin =binding.cursor.text.toString().toDouble()
-                var borucap = binding.boruCapi.text.toString().toDouble()
-                var bUstu:Double =  (((Aletkotu - (baca1 - (((baca1 - baca2)/bacamesafe)*nerdesin))) - borucap)).toDouble()
-                var bAlti:Double =  (Aletkotu - (baca1 - (((baca1 - baca2)/bacamesafe)*nerdesin))).toDouble()
-                bAlti = Math.floor(bAlti * 100) / 100;
-                bUstu = Math.floor(bUstu * 100) / 100;
+                binding.uyari.text = null
+                val aletkotu = binding.CihazKotu.text.toString().toDouble()
+                val baca1 = binding.baca1Kotu.text.toString().toDouble()
+                val baca2 = binding.baca2Kotu.text.toString().toDouble()
+                val bacamesafe = binding.bacaMesafe.text.toString().toDouble()
+                val nerdesin =binding.cursor.text.toString().toDouble()
+                val borucap = binding.boruCapi.text.toString().toDouble()
+                var bUstu:Double = (((aletkotu - (baca1 - (((baca1 - baca2)/bacamesafe)*nerdesin))) - borucap))
+                var bAlti:Double = (aletkotu - (baca1 - (((baca1 - baca2)/bacamesafe)*nerdesin)))
+                bAlti = round(bAlti * 100) / 100
+                bUstu = round(bUstu * 100) / 100
+
 
                 binding.kaziUst.text = bAlti.toString()
                 binding.boruUst.text = bUstu.toString()
@@ -34,8 +37,9 @@ class MainActivity : AppCompatActivity() {
             }
 
 
-            else binding.uyari.text = "HATA!"
-            binding.uyari.setTextColor(getColor(R.color.red))
+            else
+                "HATA!".also { binding.uyari.text = it }
+                binding.uyari.setTextColor(getColor(R.color.red))
         }
 }
 }

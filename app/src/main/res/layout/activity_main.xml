@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="8dp"
@@ -25,6 +26,13 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/baslık"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="     Enterpolasyon"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
             <LinearLayout
                 android:layout_width="250dp"
@@ -45,7 +53,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:ems="10"
-                    android:hint="@string/uyarı"
+                    android:hint="Cihaz kotu gir (Mt)"
                     android:inputType="numberDecimal"
                     android:textSize="14sp"
                     tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
@@ -63,7 +71,7 @@
                     android:layout_width="100dp"
                     android:layout_height="match_parent"
                     android:paddingTop="15dp"
-                    android:text="1. Baca Kotu"
+                    android:text="1. Nokta kotu"
                     android:textAlignment="center" />
 
                 <EditText
@@ -72,7 +80,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:hint="@string/baca_yuksek"
+                    android:hint="Boru tabanı kotu gir"
                     android:inputType="numberDecimal"
                     android:textSize="14sp"
                     tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -90,7 +98,7 @@
                     android:layout_width="100dp"
                     android:layout_height="match_parent"
                     android:paddingTop="15dp"
-                    android:text="2. Baca Kotu"
+                    android:text="2. Nokta kotu"
                     android:textAlignment="center" />
 
                 <EditText
@@ -99,7 +107,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:hint="@string/baca_duşuk"
+                    android:hint="Boru tabanı kotu gir"
                     android:inputType="numberDecimal"
                     android:textSize="14sp"
                     tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
@@ -116,7 +124,7 @@
                     android:layout_width="100dp"
                     android:layout_height="match_parent"
                     android:paddingTop="2dp"
-                    android:text="Bacalar Arası Mesafe"
+                    android:text="Noktalar Arası Mesafe"
                     android:textAlignment="center" />
 
                 <EditText
@@ -198,6 +206,10 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="19dp" />
+
                 <Button
                     android:id="@+id/hesapButton"
                     style="@style/Widget.AppCompat.Button.Colored"
@@ -236,7 +248,7 @@
                     android:id="@+id/textView33"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Boru Altı (kazı)"
+                    android:text="Boru Altı)"
                     android:textAlignment="center"
                     android:textSize="14sp" />
 
