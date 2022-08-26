@@ -28,4 +28,4 @@ LÜTFEN KENDİNİZ MANUEL OLARAK HESAPLAMALARI KONTROL EDİNİZ.
 ---adresinden ulaşabilirsiniz.  
 
 
-Apk Download : https://github.com/Nalende/AltyapiAsistani/releases/tag/v1.1
+Apk Download : https://github.com/Nalende/AltyapiAsistani/releases/tag/V1.1
