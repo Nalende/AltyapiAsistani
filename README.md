@@ -29,3 +29,28 @@ LÜTFEN KENDİNİZ MANUEL OLARAK HESAPLAMALARI KONTROL EDİNİZ.
 
 
 Apk Download : https://github.com/Nalende/AltyapiAsistani/releases/tag/V1.1
+
+
+<br><br><br><br><br><br><br>
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+<br><br><br><br><br><br><br>
+
+It is a program that I automate the calculations we use in infrastructure operations during Survey Activities. When laying pipes between the chimneys, when we come to the same level with the level, we need to make separate interpolation calculations for each distance, and sometimes we get careless errors while making these calculations. To avoid this, this program is a simple automation work.
+NOTE: The program gives the "Above Pipe" and "Under Pipe" values as "​VALUE TO BE READ ON THE NIVO DEVICE​", NOT as a level!
+
+ ****I AM NOT RESPONSIBLE AS THE APPLICATION OR THE MANUFACTURER IF THE WORK DONE WITH THIS PROGRAM IS GIVEN INCORRECTLY, PLEASE MANUALLY CHECK THE ACCOUNTS YOURSELF. **** We remind you to be particularly meticulous about problems (caused by situations such as unevenly poured chimney concrete), especially depending on the type of pipe and chimney.
+
+
+
+<br><h2>v1.1</h2><br>
+
+*** Fixed bug text not disappearing. *** Expressions have been adjusted so that the expressed levels are not misunderstood and calculated (eg below the pipe instead of the chimney level).
+
+
+If you want to reach any subject
+
+Email : eminkepenek@gmail.com
+
+Apk Download : https://github.com/Nalende/AltyapiAsistani/releases/tag/V1.1
