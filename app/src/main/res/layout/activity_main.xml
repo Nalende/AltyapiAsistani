@@ -80,7 +80,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:hint="Boru tabanı kotu gir"
+                    android:hint="Boru tabanı kotu gir!"
                     android:inputType="numberDecimal"
                     android:textSize="14sp"
                     tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -107,7 +107,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:hint="Boru tabanı kotu gir"
+                    android:hint="Boru tabanı kotu gir!"
                     android:inputType="numberDecimal"
                     android:textSize="14sp"
                     tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
@@ -248,7 +248,7 @@
                     android:id="@+id/textView33"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Boru Altı)"
+                    android:text="Boru Altı"
                     android:textAlignment="center"
                     android:textSize="14sp" />
 

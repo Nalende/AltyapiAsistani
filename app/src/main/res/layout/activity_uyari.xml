@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BAŞLAMADAN ÖNCE !!"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:fontFamily="sans-serif-medium"
+                app:textAllCaps="true"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="  Haritacılık Faaliyetleri esnasında altyapı işlemlerinde kullandığımız hesaplamaları otomasyonlaştırdığım bir programcık. Bacalar arası boru döşerken nivo ile kotlama yaptığımızda her mesafe için ayrı bir enterpolasyon hesabı yapmamız gerekmekte ve bazı zamanlarda bu hesaplamaları yaparken dikkatsizlik sonucu hatalar elde etmekteyiz. İşte bunu önlemek maksadıyla basit bir otomasyon çalışmasıdır. "
+                tools:ignore="HardcodedText" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NOT: 'Program Boru üstü' Ve 'Boru Altı' değerlerini 'MİRADA OKUNACAK DEĞER' olarak vermektedir, Kot olarak DEĞİL!"
+                app:fontFamily="sans-serif-black"
+                app:textAllCaps="true"
+                tools:ignore="HardcodedText" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="En doğru uygulama şekli bacadan çıktıktan hemen sonraki BORU ALTI kotunu 1. Nokta kısmına yazmak, ve Bacaya girecek olan BORUNUN ALT KOTUNU 2. nokta kısmına yazmaktır. Boru çapını DIŞTAN hesaplamakta olup, Borunun cinsi ve şeklindeki gayrinizami durumlardan dolayı sapmalar olabilmektedir. Dikkat ediniz!"
+                tools:ignore="HardcodedText" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cihaz Kotu Kısmına Cihazınızın kotunu, 1. Nokta kısmına YÜKSEK kotlu olan noktanın kotunu, 2. Nokta kısmına DÜŞÜK kotlu olan noktanın kotunu, Mesafe kısmına ve Boru Çapı kısmına METRE cinsinden aradaki mesafeyi ve Kaçıncı metreyi okuyorsun kısmına 1. BORUDAN İTİBAREN OKUNMASI İSTENEN NOKTAYA olan mesafeyi yazınız. "
+                app:fontFamily="sans-serif-black"
+                app:textAllCaps="false"
+                tools:ignore="HardcodedText" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                tools:layout_editor_absoluteX="-190dp"
+                tools:layout_editor_absoluteY="462dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BU PROGRAM İLE YAPILAN ÇALIŞMALARIN HERHANGİ BİR YANLIŞ SONUÇ DOĞURMASI DURUMUNDA UYGULAMA VEYA ÜRETEN KİŞİ OLARAK ŞAHSIM SORUMLU DEĞİLDİR, LÜTFEN KENDİNİZ MANUEL OLARAK HESAPLAMALARI KONTROL EDİNİZ. **** Özellikle borunun ve bacanın cinsine bağlı olarak (gayrinizami dökülmüş baca betonu gibi durumlardan kaynaklı) sorunlar konusunda özellikle titiz davranmanızı hatırlatırız.  "
+                tools:ignore="HardcodedText" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <Button
+                android:id="@+id/butonKapat"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="KAPAT"
+                app:backgroundTint="@color/cardview_dark_background"
+                app:iconTint="@color/cardview_dark_background"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
